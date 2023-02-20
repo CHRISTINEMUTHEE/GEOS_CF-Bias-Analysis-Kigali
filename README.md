@@ -23,7 +23,7 @@ The reference Grade data is from Gitega site.
 
 ## Data Cleaning and Validation Protocol.
 Air Quality data generation has grown rapidly with demand for monitoring data emanating from governments,research organizations, Citizen scientist, the media etc.The cost of deploying reference grade montors has limited investments into air quality data generation. Recent investments in Low Cost Sensors has stired a rapid uptake of air quality data in varying institutions and governments in the need to expand the data networks and spatial coverage in monitoring. This however comes at a cost of noisy data from Low Cost Sensors. Data generated from Low Cost Sensors requires a higher degree of scruitiny due to the greater uncertainity expected.
-The Development of a QA/QC protocol is therefore paramount to generate "Data of Knoen Quality/Conformance".
+The Development of a QA/QC protocol is therefore paramount to generate "Data of Known Quality/Conformance".
 The same criteria of determining conformance, depending on the area of application was applied to LCS used for GEOS-CF bias correction.
 ### Factors considered in analyzing the quality of the data from Kigali.
 
@@ -33,5 +33,16 @@ The same criteria of determining conformance, depending on the area of applicati
 4. **Completeness** - quantitative  measure  that  is  used  to  evaluate  how  many valid  data were obtained in comparison to the amount that was planned. We budgeted for one year of full data from each site.
 
 ### Results and Discussions.
+Data was merged into a single dataframe for analysis.We had only 0.33% of missing values for the CO paramter which could be attributed to the values from Gitega station. This is fit for analysis as  such an margin is unlikely to cause changes in the variation of the data in the entire dataset.
+## Daily Average.
+### 1. Gacuriro.
+* This site has constant values for PM10 and PM2.5 indicative of equipment failure or single value logging in the month of May 2022 to Mid- July 2022.
+* An instance of an outlier spike in Ozone concentration was detected in May 2022.
+* An anomaly characterized by a drop and immediate spike level of CO was detetected in May to July. This could be attributed to outlier values within the hourly logs or a sudden pollution activity at around the same time.
 
+### 2. Gitega.
+* Irregular patterns,characterized by graphs ehich discrete patterns, unlike what is expected of continous values. The partpetual pattern seems to be in all pollutant values. Indicating instances of equioment failure, iregular logs and errors in numeical conversions.
 
+### 3. Kimihurura.
+* PM10 concentration has a steady variation abd a singkle spike event in June 2022. The outlier values peak from <100 ugm3 to > 600 ug/m3. This is indicative of a single pollution event or error in the value log.
+* From a steady pattern of CO concentration, there is an instance of a sudden drop in June 2022.
