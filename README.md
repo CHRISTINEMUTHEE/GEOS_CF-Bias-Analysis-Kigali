@@ -46,3 +46,5 @@ Data was merged into a single dataframe for analysis.We had only 0.33% of missin
 ### 3. Kimihurura.
 * PM10 concentration has a steady variation abd a singkle spike event in June 2022. The outlier values peak from <100 ugm3 to > 600 ug/m3. This is indicative of a single pollution event or error in the value log.
 * From a steady pattern of CO concentration, there is an instance of a sudden drop in June 2022.
+
+# Comparison with Forecasts to assess Bias factor.
